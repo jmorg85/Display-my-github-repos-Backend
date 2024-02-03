@@ -12,3 +12,15 @@ Here are the results of the call
 
 # Links
 1. Link to the Github API: https://docs.github.com/en/rest?apiVersion=2022-11-28
+
+# How to get started
+1.  In the repository, click on the green code button as shown below and copy the URL
+![image](https://github.com/jmorg85/Display-my-github-repos-Frontend/assets/15697425/bdb9430f-4149-4824-8949-914081a5d29a)
+
+2. Open your command Window (cmd)
+![image](https://github.com/jmorg85/Display-my-github-repos-Frontend/assets/15697425/6c917aac-6ebc-46ce-a00e-fcdd32b02d05)
+
+3. Navigate to your chosen destination where you want to store the cloned repo.
+4. Use git Clone + {link you copied from step 1} and you are all set to go
+![image](https://github.com/jmorg85/Display-my-github-repos-Backend/assets/15697425/2dbffa81-a3d0-4f27-8d41-c4992855594b)
+![image](https://github.com/jmorg85/Display-my-github-repos-Backend/assets/15697425/72faba08-8bbe-40c7-9528-7ec341f19e77)
