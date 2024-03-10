@@ -1,4 +1,5 @@
 using Github_React_Project_Backend_2.Interfaces;
+using Github_React_Project_Backend_2.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddCors(options => {
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IGithubRepo, GithubRepo>();
+builder.Services.AddScoped<IGithubService, GithubService>();
 
 var app = builder.Build();
 

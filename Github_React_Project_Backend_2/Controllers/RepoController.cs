@@ -1,5 +1,6 @@
 ﻿using Github_React_Project_Backend_2.Interfaces;
 using Github_React_Project_Backend_2.Models;
+using Github_React_Project_Backend_2.Services;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,16 +11,16 @@ namespace Github_React_Project_Backend_2.Controllers
     [ApiController]
     public class RepoController : ControllerBase
     {
-        private readonly IGithubRepo _githubRepo;
+        private readonly IGithubService _service;
 
-        public RepoController(IGithubRepo githubRepo)
+        public RepoController(IGithubService service)
         {
-            _githubRepo = githubRepo;
+            _service = service;
         }
         [HttpGet]
         public async Task<List<GithubResponse>> Get()
         {
-            List<GithubResponse> response = await _githubRepo.getRepos();
+            List<GithubResponse> response = await _service.GetRepos();
 
             return response;
         }
